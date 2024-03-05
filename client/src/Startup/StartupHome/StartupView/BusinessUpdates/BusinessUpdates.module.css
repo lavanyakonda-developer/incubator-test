@@ -1,0 +1,7 @@
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  /* top: 0;
+  position: sticky;
+  background: white; */
+}

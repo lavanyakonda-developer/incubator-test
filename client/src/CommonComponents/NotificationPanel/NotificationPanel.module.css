@@ -1,0 +1,92 @@
+.notificationPanelOpen {
+  top: 0;
+  /* height: 100%; */
+  z-index: 9999;
+  padding: 40px;
+  flex: 3 1 0%;
+  overflow-y: auto;
+}
+
+.notificationContentHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.notificationBox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 20px 0px;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid var(--Neutral-color-Neutral-3, #f2f2f5);
+  }
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.logo {
+  max-height: 100%;
+  background-color: bisque;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.text {
+  overflow: hidden;
+  color: var(--Neutral-color-Neutral-12, #1c2024);
+  text-overflow: ellipsis;
+
+  /* Typography/2/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.notificationContent {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.activityHeading {
+  color: #000;
+  font-family: Merriweather;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.08px;
+}
+
+.searchBar {
+  width: 20% !important;
+  padding: 8px !important;
+  /* color: var(--Neutral-color-Neutral-Alpha-9, rgba(0, 4, 29, 0.46)); */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border-radius: var(--Radius-3-max, 6px);
+  border: 1px solid var(--Neutral-color-Neutral-Alpha-5, rgba(0, 0, 48, 0.11));
+  background: var(--Tokens-Colors-surface, rgba(255, 255, 255, 0.9));
+}
+
+.searchBarContainer {
+  padding-bottom: 24px;
+}

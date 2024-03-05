@@ -1,0 +1,259 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  /* width: 100%; */
+  /* padding-top: 8px; */
+}
+
+.waitingContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.rejectBox {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  max-width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.reviewBox {
+  padding: 24px 0px;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff9ed;
+  top: 0;
+}
+
+.reviewText {
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.innerContainer {
+  display: flex;
+  height: calc(100% - 120px);
+  overflow: auto;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  gap: 6px;
+}
+
+.detailsContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 60px;
+  /* gap: 16px; */
+}
+
+.answer {
+  padding: 8px 0px;
+}
+
+.previewDocumentsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: calc(100% + 16px);
+  overflow-y: auto;
+}
+
+.documentCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 0 calc(10% - 16px);
+  gap: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: #f5f5f5 0.3s ease;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+
+.cardPreview {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cardPreview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardDetails {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.cardDetails strong {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.cardActions {
+  display: flex;
+  gap: 8px;
+}
+
+.questionContainer {
+  /* display: flex; */
+}
+
+.detailsHeader {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.documentsContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 24px;
+}
+
+.questionnaire {
+  display: flex;
+  width: calc(100% - 80px);
+  flex-direction: column;
+  padding-left: 60px;
+  gap: 24px;
+}
+
+.question {
+  font-weight: bold;
+  padding: 8px 0px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modalBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background color */
+  z-index: 1000; /* Ensure the modal is on top of other content */
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 60%;
+  min-width: 40%;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.signature {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.messageContainer {
+  display: flex;
+  padding: 14px var(--Space-5, 24px);
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  border-radius: var(--Radius-3-max, 6px);
+  background: var(--Accent-color-Accent-3, #f0f4ff);
+  color: var(--Accent-color-Accent-10, #3a5ccc);
+  width: 90%;
+
+  /* Typography/2/Medium */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
+}
+
+.messageContainerButtons {
+  display: flex;
+  gap: 16px;
+}

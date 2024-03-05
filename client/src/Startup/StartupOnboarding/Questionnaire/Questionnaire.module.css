@@ -1,0 +1,266 @@
+/* DetailedQuestionnaire.module.css */
+
+.questionnaireContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px 100px;
+  gap: 16px;
+  flex: 1;
+  overflow: auto;
+}
+
+.detailedQuestionnaire {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* padding: 24px; */
+  background-color: #fff;
+  /* overflow-y: auto; */
+  width: 100%;
+}
+
+.detailedQuestionnaire h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.questionHeader {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.questionContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionText {
+  margin-top: 12px;
+}
+
+.answerTextarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  resize: vertical;
+  min-height: 80px;
+  max-height: 200px;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 16px;
+
+  width: 74.5%;
+  padding: var(--Space-5, 24px) var(--Space-8, 40px);
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid var(--Neutral-color-Neutral-3, #f2f2f5);
+  background: var(--Default-colors-white, #fff);
+
+  /* Shadows/Light/shadow-3 */
+  box-shadow: 0px 2px 3px -2px rgba(0, 0, 61, 0.05),
+    0px 3px 12px -4px rgba(0, 0, 0, 0.05), 0px 4px 16px -8px rgba(0, 0, 0, 0.08);
+
+  bottom: 0;
+  position: absolute;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.images {
+  display: flex;
+  gap: 8px;
+}
+
+.imagesList {
+  display: flex;
+  gap: 8px;
+}
+
+.chooseButtonContainer {
+  display: flex;
+  width: 50%;
+
+  align-items: center;
+}
+
+.uploadLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid #6d48ff;
+  background-color: #6d48ff;
+  border-radius: 4px;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.uploadLabel:hover {
+  background-color: #5a3dd8;
+}
+
+.chooseFileText {
+  /* font-weight: bold; */
+}
+
+.icon {
+  color: gray;
+}
+
+.imageCard {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+}
+
+.fileName {
+  text-decoration: none;
+  color: black;
+}
+
+/* Modal css */
+
+.modalBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background color */
+  z-index: 1000; /* Ensure the modal is on top of other content */
+}
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 60%;
+  min-width: 40%;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modalTopContent {
+  display: flex;
+  gap: 16px;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.title {
+  color: #000;
+  font-family: Merriweather;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  letter-spacing: -0.08px;
+}
+
+.subTitle {
+  color: var(--Neutral-color-Neutral-11, #60646c);
+
+  /* Typography/2/Regular */
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.questionnaireSections {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.sectionTitle {
+  color: #000;
+  font-family: Merriweather;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 26px; /* 144.444% */
+  letter-spacing: -0.04px;
+}
+
+.textArea {
+  margin: 8px 0px;
+  width: 95%;
+  border: 1px solid var(--Neutral-color-Neutral-4, #ebebef);
+  color: #000;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 8px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sectionQuestions {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

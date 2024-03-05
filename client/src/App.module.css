@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.content {
+  text-align: center;
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  /* Add any other body styles you need */
+  font-family: Inter;
+}
