@@ -10,8 +10,8 @@ import axios from "axios";
 //     ? "https://your-production-api.com" //TODO
 //     : "http://localhost:3001";
 
-export const API = "http://35.154.239.8:8000/";
-export const socketAPI = "http://35.154.239.8:3001";
+export const API = "http://3.27.106.209:8000/";
+export const socketAPI = "http://3.27.106.209:3001";
 
 export const makeRequest = axios.create({
   baseURL: API,

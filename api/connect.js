@@ -11,7 +11,7 @@ const databaseDetails = {
   //   port: 3306, // Default MySQL port
   // },
   development: {
-    host: "35.154.239.8",
+    host: "3.27.106.209",
     user: "root",
     password: "incubator_saas",
     database: "incubator_saas",
